@@ -19,7 +19,7 @@
     Public Sub Died(noun As String)
         If Message = Nothing Then
             PlayTrack(Track.Victory)
-            Message = noun + DESCRIPTIONS(Application.RNG.Next(0, DESCRIPTIONS.Length - 1))
+            Message = noun + DESCRIPTIONS(Application.RNG.Next(0, DESCRIPTIONS.Length))
             TicksToShow -= 1
         End If
     End Sub
