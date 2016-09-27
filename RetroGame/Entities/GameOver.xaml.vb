@@ -11,6 +11,9 @@
     Public Message As String = Nothing
     Public TicksToShow As UInteger = 100
 
+    Public CurrentTick As UInteger = 0
+    Public StartedTick As UInteger
+
     Public Sub New()
         InitializeComponent()
         SetValue(Panel.ZIndexProperty, GAME_OVER_LAYER)
@@ -20,7 +23,10 @@
         If Message = Nothing Then
             PlayTrack(Track.Victory)
             Message = noun + DESCRIPTIONS(Application.RNG.Next(0, DESCRIPTIONS.Length))
+            StartedTick = CurrentTick
             TicksToShow -= 1
+        ElseIf CurrentTick = StartedTick Then
+            Message = "YOU BOTH SUCK"
         End If
     End Sub
 
@@ -50,9 +56,10 @@
     End Function
 
     Public Function Tick(maze As Maze) As Entity.State Implements Entity.Tick
+
         If TicksToShow = 0 Then
             TextLabel.Foreground = New SolidColorBrush(ColorFromHSV(Application.RNG.NextDouble * 360, Application.RNG.NextDouble, 1))
-
+            CurrentTick = maze.CurrentTick
             RenderTransform = New TranslateTransform(
             Application.RNG.NextDouble() * 2 * Jitter - Jitter,
             Application.RNG.NextDouble() * 2 * Jitter - Jitter)
