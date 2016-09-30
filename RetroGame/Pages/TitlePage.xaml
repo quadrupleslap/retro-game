@@ -92,6 +92,11 @@
                    MouseUp="GoToDeveloperPage">
                 › Developer Website
             </Label>
+            <Label Style="{StaticResource ButtonHover}" HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Foreground="White" FontFamily="Lucida Sans Typewriter" FontSize="24"
+                   MouseUp="Quit">
+                › Exit Game
+            </Label>
         </StackPanel>
     </Grid>
 </Page>
