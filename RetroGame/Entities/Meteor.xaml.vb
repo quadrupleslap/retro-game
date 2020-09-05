@@ -61,7 +61,7 @@
         SetLocation(maze.CurrentTick)
 
         If maze.CurrentTick - StartTick >= TIME Then
-            DeathTicksLeft -= 1 'Start the scratch.
+            DeathTicksLeft -= 1
             PlaySound(My.Resources.MeteorHit)
             Dim collider = maze.Collides(Me)
             If collider IsNot Nothing And collider IsNot MyPlayer Then

@@ -21,7 +21,7 @@
         End Get
         Set(value As Key)
             _SelectedKey = value
-            Content.Text = value.ToString
+            TextContent.Text = value.ToString
             RaiseEvent ValueChanged(Me, value)
         End Set
     End Property

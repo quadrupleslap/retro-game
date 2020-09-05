@@ -54,7 +54,7 @@
             If TypeOf collider Is PlayerEntity Then
                 DirectCast(collider, PlayerEntity).Damage(POWER)
             End If
-            DeathTicksLeft -= 1 'Start the scratch.
+            DeathTicksLeft -= 1
         End If
 
         Spinning.Angle += 2

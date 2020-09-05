@@ -1,18 +1,16 @@
 ﻿<Button x:Class="KeyInput"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-        xmlns:local="clr-namespace:RetroGame"
         Width="100" Height="50" Margin="4"
         Cursor="Hand"
-        IsTabStop="False" FocusVisualStyle="{x:Null}">
+        IsTabStop="False"
+        FocusVisualStyle="{x:Null}">
     <Button.Style>
         <Style TargetType="{x:Type Button}">
             <Setter Property="Background" Value="Black"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderBrush" Value="White"/>
-            
+
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -24,7 +22,7 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            
+
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="BorderThickness" Value="2"/>
@@ -37,5 +35,5 @@
         </Style>
     </Button.Style>
 
-    <TextBlock x:Name="Content" TextTrimming="CharacterEllipsis">None</TextBlock>
+    <TextBlock x:Name="TextContent" TextTrimming="CharacterEllipsis">None</TextBlock>
 </Button>
