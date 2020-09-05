@@ -1,6 +1,7 @@
 ﻿<Page x:Class="ControlsPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:RetroGame"
       Background="Black"
       Title="ControlsPage">
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center">

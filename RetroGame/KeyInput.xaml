@@ -35,5 +35,5 @@
         </Style>
     </Button.Style>
 
-    <TextBlock x:Name="Content" TextTrimming="CharacterEllipsis">None</TextBlock>
+    <TextBlock x:Name="TextContent" TextTrimming="CharacterEllipsis">None</TextBlock>
 </Button>

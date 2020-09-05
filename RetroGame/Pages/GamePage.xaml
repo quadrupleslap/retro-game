@@ -1,6 +1,7 @@
 ﻿<Page x:Class="GamePage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:RetroGame"
       Title="GamePage">
     <Page.Resources>
         <ControlTemplate x:Key="PauseButton">
