@@ -1,20 +1,15 @@
-﻿<UserControl
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:RetroGame"
-             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="SpiralProjectile"
-             mc:Ignorable="d">
-    <ed:RegularPolygon
+             x:Class="SpiralProjectile">
+    <Polygon
         x:Name="Square"
         Fill="White"
         Height="32" Width="32"
-        InnerRadius="0.47211" PointCount="5"
-        Stretch="Fill" StrokeThickness="1"
+        Points="16.0,0.0 20.43998872735679,9.888879788570296 31.21690426072246,11.05572809000084 23.184052670529677,18.3342402114297 25.40456403667957,28.94427190999916 16.0,23.55376 6.595435963320432,28.94427190999916 8.815947329470323,18.3342402114297 0.7830957392775417,11.055728090000844 11.560011272643209,9.888879788570298"
+        StrokeThickness="1"
         RenderTransformOrigin="0.5,0.5">
-        <ed:RegularPolygon.RenderTransform>
+        <Polygon.RenderTransform>
             <RotateTransform x:Name="Spinning" Angle="0"/>
-        </ed:RegularPolygon.RenderTransform>
-    </ed:RegularPolygon>
+        </Polygon.RenderTransform>
+    </Polygon>
 </UserControl>

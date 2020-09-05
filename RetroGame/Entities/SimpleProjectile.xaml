@@ -1,11 +1,12 @@
 ﻿<UserControl x:Class="SimpleProjectile"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:RetroGame"
-             mc:Ignorable="d">
-    <Rectangle Name="Square" Fill="Transparent" StrokeThickness="2" Width="16" Height="16" RenderTransformOrigin="0.5,0.5">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Rectangle Name="Square"
+               Fill="Transparent"
+               StrokeThickness="2"
+               Width="16"
+               Height="16"
+               RenderTransformOrigin="0.5,0.5">
         <Rectangle.RenderTransform>
             <RotateTransform x:Name="Spinning" Angle="0"/>
         </Rectangle.RenderTransform>
